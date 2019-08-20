@@ -43,7 +43,7 @@ app.get("/authors",function(req,res){
     res.render("author",{pagetitle:"Library",nav:[{link:"/books",title:"Books"},{link:"/authors",title:"Authors"}],authorarray:author_arr});
 })
 */
-app.listen(8090,function(req,res){
+app.listen(process.env.PORT || 8090,function(req,res){
     console.log("Server is Up !!");
     
 })
